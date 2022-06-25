@@ -6,7 +6,7 @@ export default function Create() {
    name: "",
    position: "",
    level: "",
-   salary: "",
+   salary: 0,
  });
  const navigate = useNavigate();
  
@@ -51,8 +51,8 @@ export default function Create() {
            type="text"
            className="form-control"
            id="name"
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
+           value = {form.name}
+           onChange={(e) => updateForm({ name: e.target.value.toUpperCase() })}
          />
        </div>
        <div className="form-group">
@@ -117,11 +117,11 @@ export default function Create() {
          <div className="form-group">
          <label htmlFor="salary">Salary</label>
          <input
-           type="text"
+           type="number"
            className="form-control"
            id="Salary"
            value={form.salary}
-           onChange={(e) => updateForm({ salary: e.target.value })}
+           onChange={(e) => updateForm({ salary: e.target.value})} 
          />
        </div>
        </div>

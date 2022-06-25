@@ -53,7 +53,7 @@ export default function Edit() {
       name: form.name,
       position: form.position,
       level: form.level,
-      salary: form.salary
+      salary: form.salary,
     };
 
     // This will send a post request to update the data in the database.
@@ -80,7 +80,7 @@ export default function Edit() {
             className="form-control"
             id="name"
             value={form.name}
-            onChange={(e) => updateForm({ name: e.target.value })}
+            onChange={(e) => updateForm({ name: e.target.value.toUpperCase() })}
           />
         </div>
         <div className="form-group">
@@ -154,7 +154,7 @@ export default function Edit() {
         <div className="form-group">
           <label htmlFor="salary">Salary: </label>
           <input
-            type="text"
+            type="number"
             className="form-control"
             id="salary"
             value={form.salary}
