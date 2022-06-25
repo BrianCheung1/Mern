@@ -1,13 +1,19 @@
-# Mern
+# Mern Stack
 
-Creating a website using MongoDb, Express, React, Nodejs
-User is able to create a record for employee
+## Description
+Creating a website using MongoDb, Express, React, Nodejs<br />
+User is able to create a record for employee<br />
 
-Name
-Position
-Salary
-Role
+## Updateable Records
+Name<br />
+Position<br />
+Salary<br />
+Role<br />
 
-Able to edit the records
-Able to delete the roles
-Stored in MongoDb for future use
+## Features
+Able to edit the records<br />
+Able to delete the roles<br />
+Stored in MongoDb for future use<br />
+
+## Preview
+![Imgur Image](https://i.imgur.com/Akhgo74.png)
