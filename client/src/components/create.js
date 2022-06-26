@@ -3,9 +3,9 @@ import { useNavigate } from "react-router";
  
 export default function Create() {
  const [form, setForm] = useState({
-   name: "",
-   position: "",
-   level: "",
+   name: "N/A",
+   position: "N/A",
+   level: "N/A",
    salary: 0,
  });
  const navigate = useNavigate();
